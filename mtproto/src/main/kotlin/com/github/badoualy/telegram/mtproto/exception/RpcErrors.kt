@@ -8,7 +8,7 @@ object RpcErrors {
 
     // 303 ERROR_SEE_OTHER
     @JvmField val FILE_MIGRATE_X = RpcError(400, "FILE_MIGRATE_X", "the file to be accessed is currently stored in a different data center.")
-    @JvmField val PHONE_MIGRATE_X = RpcError(400, "PHONE_MIGRATE_X", "the phone number a user is trying to use for authorization is associated with a different data center.")
+    @JvmField val PHONE_MIGRATE_X = RpcError(303, "PHONE_MIGRATE_X", "the phone number a user is trying to use for authorization is associated with a different data center.")
     @JvmField val NETWORK_MIGRATE_X = RpcError(400, "NETWORK_MIGRATE_X", "the source IP address is associated with a different data center (for registration)")
     @JvmField val USER_MIGRATE_X = RpcError(400, "USER_MIGRATE_X", "the user whose identity is being used to execute queries is associated with a different data center (for registration)")
 
